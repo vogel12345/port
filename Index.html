@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>LOTUSCAR</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+        }
+        h3{
+            text-align: center;
+            font-size: 38px;
+            font-weight: bold;
+            color: white;
+        }
+        button {
+            display: block;
+            margin: 50 auto;
+            background-color: white;
+            color: black;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .image-container {
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            margin: 0 auto;
+            width: 20%;
+            border-radius: 5px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .banner {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        .banner-left {
+            left: 0;
+        }
+        .banner-right {
+            right: 0;
+        }
+        .banner img {
+            background-color: white;
+            padding: 10px;
+            margin: 0 auto;
+            width: 90%;
+            border-radius: 5px;
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>- - - - LOTUSCAR - - - - </h1>
+    <h3>- DATA SET ADMINISTRATOR -</h3>
+    <div class="banner banner-left">
+        <img src="./Imagenes/cars.jpg" alt="Descripción de la imagen 1">
+        <img src="./Imagenes/cars2.png" alt="Descripción de la imagen 2">
+        <img src="./Imagenes/cars3.png" alt="Descripción de la imagen 3">
+    </div>
+    <div class="banner banner-right">
+        <img src="./Imagenes/cars4.png" alt="Descripción de la imagen 5">
+        <img src="./Imagenes/cars5.png" alt="Descripción de la imagen 6">
+        <img src="./Imagenes/cars6.png" alt="Descripción de la imagen 7">
+    </div>
+    <div class="image-container">
+        <img src="./Imagenes/nue.png" alt="Descripción de la imagen">
+    </div>
+    <h3>- Opciones  -</h3>
+    <button id="ingresa" onclick="location.href='https://vogel12345-ventacarros-app-0vxnt5.streamlit.app/'">Ingresar</button>
+
+    
+    <script>
+        document.getElementById("ingresa").addEventListener("click", function() {
+          var boton = document.getElementById("ingresa");
+          if (boton.style.backgroundColor === "white") {
+            boton.style.backgroundColor = "blue";
+          } else {
+            boton.style.backgroundColor = "green";
+          }
+        });
+    </script>
+
+
+</body>
+</html>
